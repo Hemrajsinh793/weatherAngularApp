@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-weather-details',
   templateUrl: './weather-details.component.html',
-  styleUrls: ['./weather-details.component.scss']
+  styleUrls: ['./weather-details.component.scss'],
+  
 })
+
 export class WeatherDetailsComponent implements OnInit {
+  
+@Input() forecast;
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
